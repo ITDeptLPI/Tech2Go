@@ -2,6 +2,7 @@
 using Prism;
 using Prism.Ioc;
 using Prism.Unity;
+using Xamarin.Forms;
 
 namespace Tech2Go
 {
@@ -17,7 +18,7 @@ namespace Tech2Go
         }
 
         protected override void RegisterTypes( IContainerRegistry containerRegistry ) {
-            throw new NotImplementedException();
+            containerRegistry.RegisterForNavigation<NavigationPage>(  );
         }
     }
 }
